@@ -1,0 +1,186 @@
+.iconimage img{
+    height: 5%;
+    width: 5%;
+    margin-top: 10px;
+}
+.navigation ul{
+    margin-top: 30px;
+    margin-left: 35PX;
+    position:absolute;
+    left:50%;
+    top:5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    
+}
+.navigation li{
+    list-style: none;
+    margin-right: 100px;
+}
+.navigation li a{
+    position: relative;
+    display: block;
+   
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #8bbee8ff;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+.navigation li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #8bbee8ff;
+    border-bottom: 2px solid #8bbee8ff;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.navigation ul li a::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8bbee8ff;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+.navigation ul li a:hover {
+    color:#012822;
+}
+.navigation ul li a:hover::before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+.navigation ul li a:hover::after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+.navigation img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.marqueetext {
+    margin-top: 20PX;
+    font-size: x-large;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: linear-gradient(to bottom right, rgb(0, 55, 255),rgb(255, 255, 255) );
+    background-attachment: fixed;
+    border-radius: 20px;
+    font-style: italic;
+    
+}
+
+
+.card1 {
+    
+    width: 400px;
+    height: 425px;
+    background-color:#d7a9e3ff ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.card2 {
+   
+    width: 400px;
+    height: 425px;
+    background-color: #8bbee8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0);
+    line-height: 20px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.card3 {
+    
+    width: 400px;
+    height: 425px;
+    background-color: #a8d5baff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.card_head {
+    font-size: x-large;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: #faf0ca;
+}
+
+.card_dd {
+    text-align: center;
+    font-size: larger;
+    line-height: 20px;
+}
+.card_item1 {
+    margin-top: 30px;
+    line-height: 50px;
+    font-size: large;
+    color:dimgrey;
+    font-family: cursive;
+}
+.card_item2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    line-height: 30px;
+    font-size: large;
+    font-family: cursive;
+    color:dimgrey;
+}
+.card_item3 {
+    margin-top: 30px;
+    line-height: 50px;
+    font-size: large;
+    color:dimgrey;
+    font-family: cursive;
+}
+.card1:hover .card_head {
+    color: rgb(253, 56, 56);
+}
+.card2:hover .card_head {
+    color: rgb(253, 56, 56);
+}
+.card3:hover .card_head {
+    color: rgb(253, 56, 56);
+}
+.card1:hover {
+   
+    transform: translate(100px) translateY(-100px);
+    transition: all 0.7s;
+    
+}
+.card2:hover {
+   
+    transform: translateY(-100px);
+    transition: all 0.7s;
+}
+.card3:hover {
+   
+    transform: translate(-100px) translateY(-100px);
+    transition: all 0.7s;
+    
+}
+
+
+
